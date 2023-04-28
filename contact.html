@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css">
+    <title>John's Portfolio</title>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <span style="font-size:30px; cursor:pointer; color:rgb(255, 255, 255);" onclick="openNav()">&#9776; </span>
+        <div id="mySidenav" class="nav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a></li>
+            <a href="about.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    <h1 class="contactme">Contact Me</h1>
+    <h2 class="subcontactme">If you have a great idea, shoot me a message! Let's make it happen 🙌</h2>
+    <div class="form">
+      <form action="https://formspree.io/f/mjvdyaen" method="POST">
+        <p>
+          <label class="namelabel"></label>
+          <input type="name" name="name" placeholder="Enter your name..." onfocus="this.placeholder=''" onblur="this.placeholder='Enter your name...'" required/>  
+        </p>
+        <p>
+          <label class="emaillabel"></label>
+          <input type="email" name="email" placeholder="Enter your email..." onfocus="this.placeholder=''" onblur="this.placeholder='Enter your email...'" required/>  
+        </p>
+        <p>
+          <label class="messagelabel"></label>
+            <textarea name="message" placeholder="Enter your message..." onfocus="this.placeholder=''" onblur="this.placeholder='Enter your message...'" required></textarea>
+        </p>
+        <button type="submit">Send</button>
+    </form>
+    </div>
+    <ul class="socials">
+      <li><a href="https://www.linkedin.com/in/yejun-jeong-662802205/"><img src="linkedin.png" alt="LinkedIn" width="40" heihgt="20"></a></li>
+      <li><a href="https://github.com/johnjeong81"><img src="github.png" alt="GitHub" width="40" heihgt="20"></a></li>
+      <li><a href="mailto:jeongyej@msu.edu"><img src="email.png" alt="Email" width="40" heihgt="20"></a></li>
+      <li><a href="Resume.pdf"><img src="resume.png" alt="Resume" width="40" heihgt="20"></a></li>
+    </ul>
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+  </script>
+  </body>
+</html>    

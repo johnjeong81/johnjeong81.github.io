@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css">
+    <title>John's Portfolio</title>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <span style="font-size:30px; cursor:pointer; color:rgb(255, 255, 255);" onclick="openNav()">&#9776; </span>
+        <div id="mySidenav" class="nav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a></li>
+            <a href="about.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            </ul>
+        </div>
+      <div class="abouttext">
+        <h2 class="intro">So, a little bit about myself...</h2>
+        <p>
+          My name is John Jeong,
+          <br>and I am a Junior attending Michigan State University.
+        </p>
+        <p>
+          My major is Information Science with an additional major in Games and Interactive Media.
+        </p>
+        <p>
+          I am also going through a minor in Information Technology.
+        </p>
+        <p>
+          I am looking to become a Front-End Web Developer after graduation,
+          <br>and my goal is to develop a user-friendly website!
+        </p>
+        <br>
+        <h3>My Web Development skills include:</h3>
+      </div>
+      <ul class="skills">
+        <li class="htmlbox"><a>HTML</a></li>
+        <li class="cssbox"><a>CSS</a></li>
+        <li class="jsbox"><a>JavaScript</a></li>
+        <li class="phpbox"><a>PHP</a></li>
+      </ul>
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+  </script>
+  </body>
+</html>
